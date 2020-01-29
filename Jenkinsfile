@@ -8,10 +8,6 @@ stage("NexusConnector"){
        nexusconector()
         }
         }
-        stage("NexusCollector"){
-            steps{
-       nexuscollector()
-        }
-        }
+       
 }
 }
