@@ -11,7 +11,7 @@ stage("NexusConnector"){
     stage("NexusCollector"){
             steps{
              
-       nexuscollector()
+       nexuscolector()
         }
         }
        
