@@ -13,6 +13,7 @@ stage("NexusConnector"){
       log_nexus("not executed")
         }
   }
+}
     stage("NexusCollector"){
             steps{
              
