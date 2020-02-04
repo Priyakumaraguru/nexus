@@ -27,6 +27,17 @@ stage("NexusConnector"){
   }
         }
         
-       
+    stage("Nexus status"){
+            steps{
+             
+       nexus_status()
+              log_nexus("is created successfully")
+        }
+  post{
+    failure{
+      log_nexus("is not created")
+        }
+  }
+}   
 }
 }
